@@ -1,0 +1,222 @@
+@import "./global.scss";
+
+.portfolio {
+    background-color: rgb(100, 102, 106);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+
+    h1 {
+        font-size: 45px;
+        padding: 2%;
+        margin-bottom: 2%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .parent1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1px;
+        overflow: hidden;
+        display: inline;
+    }
+
+    .parent2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 50px;
+        overflow: hidden;
+        display: inline;
+    }
+
+    .child {
+        width: 550px;
+        height: 600px;
+        padding: 5px;
+        box-sizing: border-box;
+        overflow: hidden;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2 {
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        p {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+    }
+
+    .child img {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width:320px) {
+
+    .portfolio {
+
+        display: flex;
+        float: left;
+
+        h1{
+            height: 12%;
+            font-size: 40px;
+        }
+
+        .parent1{
+            height: 54%;
+            width: 85%;
+
+            .child {
+
+                width: 320px;
+                height: 170px;
+                margin-top: 12%;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 20px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 15px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        .parent2{
+            height: 54%;
+            width: 85%;
+
+            .child {
+
+                width: 320px;
+                height: 170px;
+                margin-bottom: 11%;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 20px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 15px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:940px) {
+
+    .portfolio {
+
+        display: flex;
+        float: left;
+
+        h1{
+            height: 12%;
+            font-size: 42px;
+        }
+
+        .parent1{
+            height: 79%;
+            width: 85%;
+
+            .child {
+
+                width: 515px;
+                height: 230px;
+                margin: 9% auto 0 auto;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 25px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 20px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+                    
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        .parent2{
+            height: 66%;
+            width: 85%;
+
+            .child {
+
+                width: 515px;
+                height: 230px;
+                margin-bottom: 11%;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 25px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 20px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}

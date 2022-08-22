@@ -1,0 +1,583 @@
+<a href="mailto:neha.hakke@quodeck.com">
+              <img src="gmail.png" alt=""></img>
+            </a>
+
+
+            onSubmit={handleSubmit}
+
+
+
+            const [message , setMessage] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessage(true)
+  }
+
+
+  align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            display: flex;
+
+
+
+Portfolio
+
+export default function portfolio() {
+
+  return (
+    <div className="portfolio" id="portfolio">
+      <h1>Projects</h1>
+      <div className="center">
+        <div className="parent1">
+          <div className="child">
+            <h2>Coffee Shop Website</h2>
+            <p>Created a website for a coffee shop which includes different items present in it's Menu along with that it also has option of selecting the Shop section, Nearby cafe section and an Explore section. The technologies used are HTML and CSS.</p>
+            <a href="https://github.com/NehaHQuodeck/CoffeeCafe">
+              <img src="github.png" alt="GitHub"></img>
+            </a>
+          </div>
+        </div>
+        <div className="parent2">
+          <div className="child">
+            <h2>Skill School Website</h2>
+            <p>Created a website for virtual classes which include the types of skills to be taught online and a breif discription of each skills and classes to be taken. Site which motives you to upgrade yourself. The technologies used are HTML, CSS and Bootstrap.</p>
+            <a href="https://github.com/NehaHQuodeck/SkillSchool">  
+              <img src="github.png" alt="Github"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    );
+}
+
+
+
+
+Portfolio CSS
+
+after parent2  and before child
+
+
+.center {
+        margin: auto;
+        text-align: left;
+        padding: 30px;
+        overflow: hidden;
+        display: inline;
+
+    }
+
+
+
+
+    .child img{
+        width: 50%;
+        height: 40%;
+        margin-top: 20%;
+        margin-left: 20%;
+        float: right;
+    }
+
+
+    skills page 
+
+
+    @media (max-width:820px){
+
+
+    .work{
+
+        h2{
+            padding-top: 2%;
+            padding-bottom: 10%;
+        }
+    }
+
+
+    .center{
+        overflow: hidden;
+        margin: auto;
+        width: 80%;   
+        height: 4%;
+        
+        h3{
+            font-size: 30px ;
+        }
+    }
+
+    .parent {
+        overflow: hidden;
+        height: 45%;
+        width: 75%;
+    }
+
+    .child{
+        overflow: hidden;
+        margin-top: 15%;
+
+        float: center;
+        img {
+            padding: 25px;
+        }
+    }
+}
+
+@media (max-width:912px){
+
+
+    .work{
+
+        h2{
+            padding-top: 2%;
+            padding-bottom: 10%;
+        }
+    }
+
+
+    .center{
+        overflow: hidden;
+        margin: auto;
+        width: 80%;   
+        height: 4%;
+        
+        h3{
+            font-size: 28px ;
+        }
+    }
+
+    .parent {
+        overflow: hidden;
+        height: 45%;
+        width: 75%;
+    }
+
+    .child{
+        overflow: hidden;
+        margin-top: 15%;
+
+        float: center;
+        img {
+            padding: 25px;
+        }
+    }
+}
+
+
+
+
+@media (max-width:375px) {
+
+    .portfolio {
+
+        display: flex;
+        float: left;
+
+        h1{
+            height: 30%;
+            font-size: 20px;
+        }
+
+        .parent1{
+            padding: 45px;
+            align-items:center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            display:flex;
+
+            .child {
+
+                width: 200px;
+                height: 200px;
+                align-items: center;
+                float: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 20px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 10px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 40px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        .parent2{
+            padding: 5px;
+            align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            display: flex;
+
+            .child {
+
+                width: 500px;
+                height: 450px;
+                align-items: center;
+                float: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 28px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 20px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 40px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024) {
+
+
+    .portfolio{
+        h1{
+            padding-bottom: 5%;
+        }
+    }
+
+    .parent1{
+        padding: 40px;
+        align-items:center;
+        float: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display:flex;
+        width: 54%;
+        height: 223%;
+
+        .child {
+
+            width: 500px;
+            height: 550px;
+            align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            h2 {
+                padding: 3px;
+                font-size: 28px;
+            }
+
+            p {
+                padding: 1.5px;
+                font-size: 20px;
+            }
+
+            a{
+                display: flex;
+                float:left ;
+
+                img{
+                    width: 5%;
+                    height: 4%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1280) {
+
+
+    .portfolio{
+        h1{
+            padding-bottom: 5%;
+        }
+    }
+
+    .parent1{
+        padding: 40px;
+        align-items:center;
+        float: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display:flex;
+
+        .child {
+
+            width: 500px;
+            height: 550px;
+            align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            h2 {
+                padding: 3px;
+                font-size: 28px;
+            }
+
+            p {
+                padding: 1.5px;
+                font-size: 20px;
+            }
+
+            a{
+                display: flex;
+                float:left ;
+
+                img{
+                    width: 40px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+global.CSS
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+
+
+
+
+max width 940 = Portfolio
+
+
+
+@media (max-width:940px) {
+
+        .portfolio{
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+
+            h1 {
+                display: flex;
+                margin-bottom: 5%;
+            }
+        }
+
+        .parent1{
+            padding: 20px;
+            align-items:center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            display:flex;
+
+            .child {
+
+                width: 500px;
+                height:450px;
+                align-items: center;
+                float: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 28px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 20px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 40px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        .parent2{
+            padding: 5px;
+            align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            display: flex;
+
+            .child {
+
+                width: 500px;
+                height: 450px;
+                align-items: center;
+                float: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                h2 {
+                    padding: 3px;
+                    font-size: 28px;
+                }
+
+                p {
+                    padding: 1.5px;
+                    font-size: 20px;
+                }
+
+                a{
+                    display: flex;
+                    float:left ;
+
+                    img{
+                        width: 40px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:360px) {
+
+    .portfolio {
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: -3%;
+            padding: 7%;
+        }
+    }
+
+    .parent1 {
+        padding: 20px;
+        align-items: center;
+        float: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        height: 51%;
+
+        .child {
+
+            width: 304px;
+            height: 180px;
+            align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            h2 {
+                padding: 3px;
+                font-size: 20px;
+            }
+
+            p {
+                padding: 1.5px;
+                font-size: 14px;
+            }
+
+            a {
+                display: flex;
+                float: left;
+
+                img {
+                    width: 40px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .parent2 {
+        padding: 20px;
+        align-items: center;
+        float: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        height: 51%;
+
+        .child {
+
+            width: 304px;
+            height: 180px;
+            align-items: center;
+            float: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            h2 {
+                padding: 3px;
+                font-size: 20px;
+            }
+
+            p {
+                padding: 1.5px;
+                font-size: 14px;
+            }
+
+            a {
+                display: flex;
+                float: left;
+
+                img {
+                    width: 40px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
